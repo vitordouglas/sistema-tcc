@@ -62,7 +62,7 @@ class UserDaoMysql implements UserDAO {
         $sql = $this->pdo->prepare("UPDATE users SET 
             email = :email,
             password = :password,
-            name = :name;
+            name = :name,
             cidade = :cidade,
             trabalho = :trabalho,
             data_nasc = :data_nasc,
